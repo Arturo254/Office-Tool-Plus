@@ -1,0 +1,861 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.RunTime"
+                    xml:space="preserve">
+
+    <!-- Country settings, it is used to get information from server. -->
+    <sys:String x:Key="Culture">ja-jp</sys:String>
+    <!-- Products name settings, "en-us" is default value if not set. -->
+    <sys:String x:Key="ProductDict">ja-jp</sys:String>
+
+    <!-- Eula content -->
+    <sys:String x:Key="Eula.Title">ライセンス条項</sys:String>
+    <sys:String x:Key="Eula.Content">このソフトウェアを使用するには、[ソフトウェアライセンス条項]（{0}）および[Microsoft サービス規約]（{1}）に同意する必要があります。</sys:String>
+
+    <!-- Custom control -->
+    <sys:String x:Key="Yerong_String_ToggleButton.Unset">設定されていません</sys:String>
+    <sys:String x:Key="Yerong_String_ToggleButton.Off">オフ</sys:String>
+    <sys:String x:Key="Yerong_String_ToggleButton.On">オン</sys:String>
+    <sys:String x:Key="Yerong_String_MicaMenu.Name">メニュー</sys:String>
+    <sys:String x:Key="Yerong_String_MicaMenu.HelpText">クリックしてコンテキストメニューを開きます。</sys:String>
+
+    <!-- Title bar -->
+    <sys:String x:Key="Title_Bar_Command_Box">ターミナル</sys:String>
+
+    <!-- Navigation bar -->
+    <sys:String x:Key="Navigation_Menu.Name">ナビゲーションメニュー</sys:String>
+    <sys:String x:Key="Navigation_Menu.ToolTip">クリックして、ナビゲーション バーを展開または折りたたみます。</sys:String>
+    <sys:String x:Key="Navigation_Bar.Name">ナビゲーションバー</sys:String>
+    <sys:String x:Key="Navigation_Bar_Bottom.Name">下部のナビゲーション バー</sys:String>
+
+    <sys:String x:Key="Navigate_Page.Home">ホーム</sys:String>
+    <sys:String x:Key="Navigate_Page.Deploy">展開</sys:String>
+    <sys:String x:Key="Navigate_Page.Activate">アクティベート</sys:String>
+    <sys:String x:Key="Navigate_Page.Toolbox">ツールボックス</sys:String>
+    <sys:String x:Key="Navigate_Page.ConvertDocuments">ドキュメントを変換</sys:String>
+    <sys:String x:Key="Navigate_Page.HashChecker">Hash値をチェック</sys:String>
+
+    <sys:String x:Key="Navigate_Page.Settings">設定</sys:String>
+    <sys:String x:Key="Navigate_Page.About">について</sys:String>
+
+    <!-- Notification list -->
+    <sys:String x:Key="Notification_Close_Message.Name">メッセージを閉じる</sys:String>
+    <sys:String x:Key="Notification_Message_Content">メッセージ内容: {0}、{1}</sys:String>
+    <sys:String x:Key="Notification_Message_Button_List">メッセージボタン</sys:String>
+    <sys:String x:Key="Notification_Cancel_Task.Name">タスクをキャンセル</sys:String>
+
+    <!-- Home page -->
+    <sys:String x:Key="Home_Messages_Center.Name">メッセージ センター</sys:String>
+    <!-- Greetings, customize it according to your country and habits. -->
+    <sys:String x:Key="Home_Greeting_Hello">こんにちは!</sys:String>
+    <!-- 00:00 -> 05:00 -->
+    <sys:String x:Key="Home_Greeting_Hour.0">おやすみ、早めに休みを取ってください!</sys:String>
+    <!-- 05:00 -> 06:00 -->
+    <sys:String x:Key="Home_Greeting_Hour.5">もうすぐ夜明けです。起きる準備はできていますか？</sys:String>
+    <!-- 06:00 -> 10:00 -->
+    <sys:String x:Key="Home_Greeting_Hour.6">おはようございます!</sys:String>
+    <!-- 10:00 -> 11:00 -->
+    <sys:String x:Key="Home_Greeting_Hour.10">おはようございます!</sys:String>
+    <!-- 11:00 -> 12:00 -->
+    <sys:String x:Key="Home_Greeting_Hour.11">こんにちは!</sys:String>
+    <!-- 12:00 -> 13:00 -->
+    <sys:String x:Key="Home_Greeting_Hour.12">こんにちは!</sys:String>
+    <!-- 13:00 -> 15:00 -->
+    <sys:String x:Key="Home_Greeting_Hour.13">こんにちは!</sys:String>
+    <!-- 15:00 -> 17:00 -->
+    <sys:String x:Key="Home_Greeting_Hour.15">こんにちは!</sys:String>
+    <!-- 17:00 -> 18:00 -->
+    <sys:String x:Key="Home_Greeting_Hour.17">こんにちは!</sys:String>
+    <!-- 18:00 -> 21:00 -->
+    <sys:String x:Key="Home_Greeting_Hour.18">こんばんは!</sys:String>
+    <!-- 21:00 -> 22:00 -->
+    <sys:String x:Key="Home_Greeting_Hour.21">寝る時間です、良い夢を見てください!</sys:String>
+    <!-- 22:00 -> 00:00 (+1) -->
+    <sys:String x:Key="Home_Greeting_Hour.22">おやすみ、早めに休みを取ってください!</sys:String>
+    <!-- Greetings end -->
+    <sys:String x:Key="Home_Install_Office">Office をインストール</sys:String>
+    <sys:String x:Key="Home_Install_Office.O365PPRDescription">Outlook、OneDrive for Business、Word、Excel、PowerPointなどが含まれます。</sys:String>
+    <sys:String x:Key="Home_Install_Office.O365HPRDescription">Outlook、Word、Excel、PowerPointなどが含まれます。</sys:String>
+    <sys:String x:Key="Home_Install_Office.PP2019RDescription">Outlook、Word、Excel、PowerPointなどが含まれます。</sys:String>
+    <sys:String x:Key="Home_Install_Office.HS2019Description">Word、Excel、PowerPointなどが含まれます。</sys:String>
+    <sys:String x:Key="Home_Getting_Content">コンテンツを取得中。お待ちください...</sys:String>
+    <sys:String x:Key="Home_Error_While_Getting_Content">コンテンツを取得できません。インターネット接続を確認して、もう一度お試しください。</sys:String>
+    <sys:String x:Key="Home_Retry">リトライ(_R)</sys:String>
+    <sys:String x:Key="Home_Launcher.Name">アプリケーション一覧</sys:String>
+    <sys:String x:Key="Home_Launcher_CreateShortcut">デスクトップショートカットを作成する</sys:String>
+
+    <!-- Deploy page -->
+    <sys:String x:Key="Deploy_Learn_More">もっと詳しく知る</sys:String>
+    <!-- Channels Name, if you do not want to translate them, please keep in English. -->
+    <sys:String x:Key="PerpetualVL2019">Office 2019 長期エンタープライズ版チャンネル</sys:String>
+    <sys:String x:Key="PerpetualVL2021">Office 2021 長期エンタープライズ版チャンネル</sys:String>
+    <sys:String x:Key="SemiAnnual">半年エンタープライズ版チャンネル</sys:String>
+    <sys:String x:Key="MonthlyEnterprise">月間エンタープライズ版チャンネル</sys:String>
+    <sys:String x:Key="Current">現在のチャンネル</sys:String>
+    <sys:String x:Key="SemiAnnualPreview">半年エンタープライズ版チャンネル（プレビュー）</sys:String>
+    <sys:String x:Key="CurrentPreview">現在のチャンネル（プレビュー）</sys:String>
+    <sys:String x:Key="BetaChannel">ベータチャンネル</sys:String>
+
+    <!-- Error messages -->
+    <!-- {0} means product name. -->
+    <sys:String x:Key="Deploy_Error_Coexist">{0}は既存の製品と共存できません。</sys:String>
+    <!-- {0} means product name. -->
+    <sys:String x:Key="Deploy_Error_ODT_Not_Supported">{0} をインストールする場合は、インストール モジュールを Office Tool Plus に変更してください。</sys:String>
+    <!-- {0} means product name, {1} means channel name. -->
+    <sys:String x:Key="Deploy_Error_Channel">{0} は、選択したチャネルにインストールできません: {1}。</sys:String>
+    <!-- {0} means channel name, such as Current Channel. -->
+    <sys:String x:Key="Deploy_Error_Unsupported_Channel">{0} を使用する場合は、インストール モジュールを Office Tool Plus に変更してください。</sys:String>
+    <sys:String x:Key="Deploy_Error_System_Architecture">64 ビット版の Office は、64 ビット版以外のシステムにはインストールできません。</sys:String>
+    <!-- Example: You cannot install 32 bit of Office, because you have the 64 bit of Office installed on your computer. -->
+    <sys:String x:Key="Deploy_Error_Office_Architecture">Office {1} がコンピューターにインストールされているため、Office {0} をインストールできません。</sys:String>
+    <sys:String x:Key="Deploy_Error_Installation_Arch">選択したアーキテクチャは、ローカル インストール ファイルのアーキテクチャと一致しません。アーキテクチャを選択し直すか、展開にローカル インストール ファイルを使用しないでください。</sys:String>
+    <sys:String x:Key="Deploy_Error_Installation_Channel">選択した更新チャネルは、ローカル インストール ファイルの更新チャネルと一致しません。更新チャネルを再選択するか、展開にローカル インストール ファイルを使用しないでください。</sys:String>
+
+    <sys:String x:Key="Deploy_Deployment">展開 Office</sys:String>
+    <sys:String x:Key="Deploy_Deployment.Description">Office を展開する前に、展開モードが正しく設定され、製品と言語が構成されていることを確認してください。</sys:String>
+    <sys:String x:Key="Deploy_Start_Deploy">展開を開始(_D)</sys:String>
+    <sys:String x:Key="Deploy_Reset">すべての設定をリセット(_R)</sys:String>
+    <sys:String x:Key="Deploy_View_Code">コードを見る(_V)</sys:String>
+    <sys:String x:Key="Deploy_Apply_Preferences">Office アプリケーションの設定を適用する(_A)</sys:String>
+    <sys:String x:Key="Deploy_Export_Config">構成を輸出(_E)</sys:String>
+    <sys:String x:Key="Deploy_Import_Config">構成の輸入(_I)</sys:String>
+    <sys:String x:Key="Deploy_Import_Config_Web">Web から構成を輸入(_W)</sys:String>
+    <sys:String x:Key="Deploy_Mode">展開モード</sys:String>
+    <sys:String x:Key="Deploy_Mode.Edit">構成のみを編集</sys:String>
+    <sys:String x:Key="Deploy_Mode.Download">ダウンロードのみ</sys:String>
+    <sys:String x:Key="Deploy_Mode.Install">インストール</sys:String>
+    <sys:String x:Key="Deploy_Mode.Create_ISO">ISOファイルを作成</sys:String>
+    <sys:String x:Key="Deploy_Architecture">アーキテクチャ</sys:String>
+    <sys:String x:Key="Deploy_Architecture_Current_Installed">現在インストールされている Office のアーキテクチャ: {0}.</sys:String>
+    <sys:String x:Key="Deploy_Architecture.x86">32ビット</sys:String>
+    <sys:String x:Key="Deploy_Architecture.x64">64ビット</sys:String>
+    <sys:String x:Key="Deploy_Architecture.ARM">ARM (32ビット)</sys:String>
+    <sys:String x:Key="Deploy_Architecture.ARM64">ARM64 (64ビット)</sys:String>
+    <sys:String x:Key="Deploy_Channel">更新のチャンネル</sys:String>
+    <sys:String x:Key="Deploy_Channel_Available_Version">現在利用可能な Office バージョン: {0}</sys:String>
+    <sys:String x:Key="Deploy_Module">インストールモジュール</sys:String>
+    <sys:String x:Key="Deploy_Module.Description">互換性を高めるには Office 展開ツールを選択し、エクスペリエンスを向上させるには Office Tool Plus を選択してください。</sys:String>
+    <sys:String x:Key="Deploy_Module.ODT">Office 展開ツール</sys:String>
+    <sys:String x:Key="Deploy_Module.OTP">Office Tool Plus</sys:String>
+    <sys:String x:Key="Deploy_Download_First">ダウンロードを完了してからデプロイします</sys:String>
+    <sys:String x:Key="Deploy_Download_First.Description">インストール ファイルは、プログラム ディレクトリまたはソース パスで指定されたディレクトリに保存されます。</sys:String>
+    <sys:String x:Key="Deploy_Create_Shortcut">デスクトップ ショートカットを作成</sys:String>
+    <sys:String x:Key="Deploy_Create_Shortcut.Description">Office のインストール後に、Office アプリケーションへのデスクトップ ショートカットを作成します。</sys:String>
+    <!-- Do not edit it or translate it. iSlide only provided in mainland China. -->
+    <sys:String x:Key="Deploy_iSlide">Placeholder</sys:String>
+    <sys:String x:Key="Deploy_iSlide.Description">Placeholder</sys:String>
+    <sys:String x:Key="Deploy_iSlide_Install">Placeholder</sys:String>
+    <sys:String x:Key="Deploy_iSlide_Install.Name">Placeholder</sys:String>
+
+    <sys:String x:Key="Deploy_Product">製品</sys:String>
+    <sys:String x:Key="Deploy_Product.Description">{0} 個の製品がインストールされ、{1} は展開の準備ができており、{2} はアンインストールの準備ができています。</sys:String>
+    <sys:String x:Key="Deploy_Product_Button">製品を追加(_P)</sys:String>
+    <sys:String x:Key="Deploy_Product_Nothing_Here">ここには何もありません。</sys:String>
+    <sys:String x:Key="Deploy_Product_Installed">インストール済み製品</sys:String>
+    <sys:String x:Key="Deploy_Product_To_Be_Deployed">展開予定</sys:String>
+    <sys:String x:Key="Deploy_Product_To_Be_Uninstalled">アンインストール予定</sys:String>
+    <sys:String x:Key="Deploy_Uninstall_Product">アンインストール</sys:String>
+    <sys:String x:Key="Deploy_Cancel_Uninstall_Product">アンインストールをキャンセル</sys:String>
+    <sys:String x:Key="Deploy_Cancel_Deploy_Product">展開をキャンセル</sys:String>
+    <sys:String x:Key="Deploy_Applications">アプリケーション</sys:String>
+    <sys:String x:Key="Deploy_Language">言語パッケージ</sys:String>
+    <sys:String x:Key="Deploy_Language.Description">{0} 個の言語がインストールされ、{1} は展開の準備ができており、{2} はアンインストールの準備ができています。</sys:String>
+    <sys:String x:Key="Deploy_Language_Button">言語を追加(_L)</sys:String>
+    <sys:String x:Key="Deploy_Language_Nothing_Here">ここには何もありません。</sys:String>
+    <sys:String x:Key="Deploy_Language_Installed">インストール済み言語</sys:String>
+    <sys:String x:Key="Deploy_Language_To_Be_Deployed">展開予定</sys:String>
+    <sys:String x:Key="Deploy_Language_To_Be_Uninstalled">アンインストール予定</sys:String>
+    <sys:String x:Key="Deploy_Uninstall_Language">アンインストール</sys:String>
+    <sys:String x:Key="Deploy_Cancel_Uninstall_Language">アンインストールをキャンセル</sys:String>
+    <sys:String x:Key="Deploy_Cancel_Deploy_Language">展開をキャンセル</sys:String>
+
+    <sys:String x:Key="Deploy_Products_List">製品一覧</sys:String>
+    <sys:String x:Key="Deploy_Products_List_Type_To_Search">入力して製品一覧をフィルタリングします</sys:String>
+    <sys:String x:Key="Deploy_Products_List_ID">製品ID:</sys:String>
+    <sys:String x:Key="Deploy_Languages_List">言語一覧</sys:String>
+    <sys:String x:Key="Deploy_Languages_List_Type_To_Search">入力して言語一覧をフィルタリングします</sys:String>
+    <sys:String x:Key="Deploy_Languages_As_Proofing_Tool">校正ツールのみを展開します。</sys:String>
+    <sys:String x:Key="Deploy_Languages_List_ID">言語ID:</sys:String>
+    <sys:String x:Key="Deploy_Languages_List_Type">言語タイプ：</sys:String>
+    <sys:String x:Key="Deploy_Language_Tpye.Full">完全パッケージ</sys:String>
+    <sys:String x:Key="Deploy_Language_Tpye.Partial">部分パッケージ</sys:String>
+    <sys:String x:Key="Deploy_Language_Tpye.PartialWithoutProofingTools">校正ツールなしの部分パッケージ</sys:String>
+    <sys:String x:Key="Deploy_Language_Tpye.ProofingTools">校正ツール</sys:String>
+
+    <sys:String x:Key="Deploy_Installation_Files">インストールファイル</sys:String>
+    <sys:String x:Key="Deploy_Installation_Files.Description">Office インストール ファイルを選択、検証、または削除します。</sys:String>
+    <sys:String x:Key="Deploy_Installation_Files_Select">選択</sys:String>
+    <sys:String x:Key="Deploy_Installation_Files_Select.Description">インストール ファイルを選択するときは、いずれかの CAB ファイルを選択します。</sys:String>
+    <sys:String x:Key="Deploy_Installation_Files_Verify">検証</sys:String>
+    <sys:String x:Key="Deploy_Installation_Files_Verify.Description">インストール ファイルのエラーを検証します。</sys:String>
+    <sys:String x:Key="Deploy_Installation_Files_DeleteAll">すべて削除</sys:String>
+    <sys:String x:Key="Deploy_Installation_Files_Reset">リセット</sys:String>
+    <sys:String x:Key="Deploy_Installation_Files_Reset.Description">現在のインストール ファイルを使用して Office を展開しないでください。</sys:String>
+    <sys:String x:Key="Deploy_Installation_Files_UseAsSource">インストールソースとして使用</sys:String>
+    <sys:String x:Key="Deploy_Installation_Files_UseAsSource.Description">アーキテクチャと更新チャネルは、このインストールに自動的に一致します。</sys:String>
+    <sys:String x:Key="Deploy_Installation_Files_Delete">削除</sys:String>
+
+    <sys:String x:Key="Deploy_Advanced_Settings">詳細設定に移動</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Settings.Description">詳細設定に移動して、さらにオプションを設定します。</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Settings_Button">詳細設定(_A)</sys:String>
+
+    <!-- Deploy advanced page -->
+    <sys:String x:Key="Deploy_Advanced">詳細設定</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Go_Back">戻る</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Go_Back.Description">基本設定に戻ります。</sys:String>
+
+    <sys:String x:Key="Deploy_Advanced_General_Settings">一般設定</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Company_Name">組織名を入力して、Officeドキュメントに会社のプロパティを設定します。</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Description">文書化の目的でこの構成の説明を入力してください。</sys:String>
+
+    <sys:String x:Key="Deploy_Advanced_Install_Settings">インストール設定</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Fallback_Language">フォールバック言語</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Fallback_Language.Description">言語がシステム言語と一致するように設定されている場合、一致する言語がOfficeでサポートされていないか、ローカルソースで見つからない場合に、インストールするフォールバック言語を指定できます。</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Version">Officeバージョン</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Version.Description">指定されていない場合、デフォルトで使用可能な最新バージョンになります。</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Download_Path">ダウンロードパス</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Download_Path.Description">インストール ファイルのダウンロード元を定義します。ダウンロード パスを使用する場合は、Office のバージョンを指定する必要があります。</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Source_Path">ソースパス</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Source_Path.Description">ソースパスが空白の場合、Office CDNがデフォルトでソースとして使用されます。ダウンロードモードでは、ファイルを保存する場所を定義します。</sys:String>
+    <sys:String x:Key="Deploy_Advanced_No_Display">サイレントインストール</sys:String>
+    <sys:String x:Key="Deploy_Advanced_No_Display.Description">Office のインストール中に進行状況バー、エラー メッセージ、またはその他のユーザー インターフェイスは表示されません。</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Allow_CDN_Fallback">CDN へのフォールバックを許可する</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Allow_CDN_Fallback.Description">Office インストーラーが Office CDN にフォールバックして、不足している言語をダウンロードできるようにします。</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Force_Close_Apps">実行中のすべての Office アプリケーションを強制終了します</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Force_Close_Apps.Description">Unsaved data may be lost.</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Pin_To_Taskbar">タスクバーにピン留めする</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Pin_To_Taskbar.Description">Office アプリケーションのアイコンを Windows 7、8、および8.1のタスクバーにピン留めします。</sys:String>
+
+    <sys:String x:Key="Deploy_Advanced_Update_Settings">設定を更新する</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Enable_Mgnt_COM">MECM を使用して更新プログラムを管理します</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Enable_Mgnt_COM.Description">「Microsoft Endpoint Configuration Manager」を使用して更新を管理する場合、更新は「Administrator」によって管理されます。</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Enable_Update">Office の自動更新を有効にする</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Update_Path">更新元のパス</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Update_Path.Description">パスが空の場合、Office CDNがデフォルトでソースとして使用されます。</sys:String>
+
+    <sys:String x:Key="Deploy_Advanced_Upgrade_Settings">アップグレードオプション</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Migrate_Arch">システム構成の移行</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Migrate_Arch.Description">既存の Office インストールを現在指定されているシステム構成に変更します。 たとえば、32 ビットから 64 ビットへ。</sys:String>
+    <sys:String x:Key="Deploy_Advanced_MSI_Notice">The following settings only take effect when using Office Deployment Tool as the installation module.</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Remove_MSI">既存のMSIバージョンのOfficeを削除する</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Match_Previous_MSI">新しいOffice用の以前のMSIバージョンと同じ言語をインストールします</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Ignore_Product">この製品を無視する</sys:String>
+
+    <sys:String x:Key="Deploy_Advanced_Activate_Settings">アクティベーション設定</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Accept_EULA">EULA に自動的に同意する</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Accept_EULA.Description">有効にすると、[Microsoft ソフトウェア ライセンス条項]ダイアログ ボックスは表示されません。</sys:String>
+    <sys:String x:Key="Deploy_Advanced_MAK">MAKセッティング</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Auto_Activate">MAKを設定すると、製品の自動ライセンス認証が試行されます。</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Product_Activation">製品のアクティベーション</sys:String>
+    <sys:String x:Key="Deploy_Advanced_UserBased">ユーザーへ</sys:String>
+    <sys:String x:Key="Deploy_Advanced_DeviceBased">デバイスへ</sys:String>
+    <sys:String x:Key="Deploy_Advanced_SCL">共有コンピュータ</sys:String>
+    <sys:String x:Key="Deploy_Advanced_SCL_Cache_Override">ライセンス トークンの場所を上書きする</sys:String>
+    <sys:String x:Key="Deploy_Advanced_SCL_Cache_Override.ToolTip">ライセンス トークンのフォルダーの場所を指定します</sys:String>
+
+    <sys:String x:Key="Deploy_Advanced_Preferences">アプリケーション設定</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Apply_Preferences.Description">Office に設定を即座に適用します。</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Reset_Preferences">すべての設定をリセット</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Reset_Preferences_Button">リセット</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Load_Preferences_Button">設定一覧をロード</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Preferences_Type_To_Search.Name">検索設定</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Preferences_Type_To_Search.HelpText">入力して設定を検索する</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Preferences_Settings">設定</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Preferences_Enable">有効にする</sys:String>
+    <sys:String x:Key="Deploy_Advanced_Set_Preferences_Button">適用する</sys:String>
+
+    <!-- Activate page -->
+    <sys:String x:Key="Activate_Licenses_Management">ライセンス管理</sys:String>
+    <sys:String x:Key="Activate_Licenses_Management.Description">Office ライセンスをインストール、アンインストール、またはアクティブ化します。</sys:String>
+    <sys:String x:Key="Activate_Button">アクティブ(_A)</sys:String>
+    <sys:String x:Key="Activate_Display_Internet_Act_Events">インターネットアクティベーションの失敗イベントを表示する</sys:String>
+    <sys:String x:Key="Activate_Display_KMS_Events">KMS アクティベーション イベントを表示する</sys:String>
+    <sys:String x:Key="Activate_Clear_Activation">アクティブ化状態をクリア</sys:String>
+    <sys:String x:Key="Activate_Install_Licenses">ライセンスをインストール</sys:String>
+    <sys:String x:Key="Activate_Install_Licenses.Description">インストールされている Office からライセンスを取得してインストールします。</sys:String>
+    <sys:String x:Key="Activate_Install_Licenses_Button">インストール</sys:String>
+    <sys:String x:Key="Activate_Install_Other_Licenses">他のライセンスをインストールする</sys:String>
+    <sys:String x:Key="Activate_Install_Other_Licenses.Description">ローカルディスクから追加のライセンスをインストールします。</sys:String>
+    <sys:String x:Key="Activate_Install_Other_Licenses_Button">インストール</sys:String>
+    <sys:String x:Key="Activate_Uninstall_All_Licenses">すべてのライセンスをアンインストールする</sys:String>
+    <sys:String x:Key="Activate_Uninstall_All_Licenses.Description">インストールされているすべてのライセンスをアンインストールします。この操作の後、ライセンスをインストールする必要があります。</sys:String>
+    <sys:String x:Key="Activate_Uninstall_All_Licenses_Button">アンインストール</sys:String>
+
+    <sys:String x:Key="Activate_Keys_Management">キー管理</sys:String>
+    <sys:String x:Key="Activate_Keys_Management.Description">キーをインストール、アンインストールします。Office をオフラインでライセンス認証します。</sys:String>
+    <sys:String x:Key="Activate_Product_Key">製品キー</sys:String>
+    <sys:String x:Key="Activate_Product_Key.Description">Office 製品キーをインストールします。製品キー形式：XXXXX-XXXXX-XXXXX-XXXXX-XXXXX </sys:String>
+    <sys:String x:Key="Activate_Install_Product_Key">インストールキー(_I)</sys:String>
+    <sys:String x:Key="Activate_Uninstall_Unactivated_Key">すべての非アクティブなキーをアンインストールします(_U)</sys:String>
+    <sys:String x:Key="Activate_Uninstall_All_Product_Keys">すべてのキーをアンインストールします(_A)</sys:String>
+    <sys:String x:Key="Activate_Install_CID">インストール確認ID</sys:String>
+    <sys:String x:Key="Activate_Install_CID.Description">確認ID をインストールして、Office をオフラインでライセンス認証します。</sys:String>
+    <sys:String x:Key="Activate_Input_CID">確認IDを入力してください</sys:String>
+
+    <sys:String x:Key="Activate_KMS_Management">KMS管理</sys:String>
+    <sys:String x:Key="Activate_KMS_Management.Description">KMSホストとポートを設定またはリセットします。</sys:String>
+    <sys:String x:Key="Activate_KMS_Apply">KMSホストの設定(_S)</sys:String>
+    <sys:String x:Key="Activate_KMS_Host">KMSホスト</sys:String>
+    <sys:String x:Key="Activate_KMS_Host.Description">KMS ホスト名。たとえば、kms.example.com、kms.example.com:1688、IP アドレスなどです。</sys:String>
+    <sys:String x:Key="Activate_KMS_Host_Cache.Enable">ホストキャッシュを有効にする</sys:String>
+    <sys:String x:Key="Activate_KMS_Host_Cache.Disable">ホストキャッシュを無効にする</sys:String>
+    <sys:String x:Key="Activate_KMS_Reset">KMSをリセットする</sys:String>
+    <sys:String x:Key="Activate_KMS_Reset.Description">KMSホスト名を削除し、KMSポートを既定に設定します。</sys:String>
+
+    <!-- Licenses list -->
+    <sys:String x:Key="Activate_Licenses">Office ライセンス</sys:String>
+    <sys:String x:Key="Activate_License">ライセンス一覧</sys:String>
+    <sys:String x:Key="Activate_License.Description">インストール済みライセンスの管理</sys:String>
+    <sys:String x:Key="Activate_License_Refresh">リフレッシュ(_R)</sys:String>
+    <sys:String x:Key="Activate_License_Expand">すべて展開(_E)</sys:String>
+    <sys:String x:Key="Activate_License_Collapse">すべて折りたたむ(_C)</sys:String>
+    <sys:String x:Key="Activate_License_Clear">リストをクリア(_L)</sys:String>
+    <sys:String x:Key="Activate_License_Nothing_Here">ここには何もありません。</sys:String>
+    <sys:String x:Key="Activate_License_Status.Unactivated">アクティベートされない</sys:String>
+    <sys:String x:Key="Activate_License_Status.Activated">アクティベートされます</sys:String>
+    <!-- vNext Licnese -->
+    <sys:String x:Key="Activate_License_vNext.Type">ライセンスの種類:</sys:String>
+    <sys:String x:Key="Activate_License_vNext.Type.User">ユーザー</sys:String>
+    <sys:String x:Key="Activate_License_vNext.Type.Device">デバイス</sys:String>
+    <sys:String x:Key="Activate_License_vNext.Type.Subscription">サブスクリプション</sys:String>
+    <sys:String x:Key="Activate_License_vNext.Type.Perpetual">パーペチュアル</sys:String>
+    <sys:String x:Key="Activate_License_vNext.ExpireDate">ライセンスの有効期限:</sys:String>
+    <sys:String x:Key="Activate_License_vNext.MaxDevice">許可される最大デバイス数:</sys:String>
+    <sys:String x:Key="Activate_License_vNext.Status">状態:</sys:String>
+    <sys:String x:Key="Activate_License_vNext.Status.Provisioned">プロビジョニング</sys:String>
+    <sys:String x:Key="Activate_License_vNext.Code">理由コード:</sys:String>
+    <sys:String x:Key="Activate_License_vNext.Beneficiary.User">ライセンスがユーザーに割り当てられます。</sys:String>
+    <sys:String x:Key="Activate_License_vNext.Beneficiary.Device">ライセンスがデバイスに割り当てられます。</sys:String>
+    <sys:String x:Key="Activate_License_vNext_Metadata.TenantID">テナントID:</sys:String>
+    <sys:String x:Key="Activate_License_vNext_Metadata.DeviceID">デバイスID:</sys:String>
+    <sys:String x:Key="Activate_License_vNext_Metadata.UserID">ユーザーID:</sys:String>
+    <sys:String x:Key="Activate_License_vNext_Metadata.UserEmail">ユーザーのE-Mail:</sys:String>
+    <sys:String x:Key="Activate_License_vNext_Metadata.ValidFrom">承認有効時刻:</sys:String>
+    <sys:String x:Key="Activate_License_vNext_Metadata.ValidTo">承認終了時刻:</sys:String>
+    <sys:String x:Key="Activate_License_vNext_Metadata.RenewalTime">次回の更新時刻:</sys:String>
+    <!-- Legacy License -->
+    <sys:String x:Key="Activate_License_Lic.Description">デスコリプション:</sys:String>
+    <sys:String x:Key="Activate_License_Lic.Key">キーの最後の5文字:</sys:String>
+    <sys:String x:Key="Activate_License_Lic.Period">残存期間:</sys:String>
+    <sys:String x:Key="Activate_License_Lic.Error_Code">エラーコード:</sys:String>
+    <sys:String x:Key="Activate_License_Lic.Error_Description">エラーの説明:</sys:String>
+    <sys:String x:Key="Activate_License_VL.Type">アクティベーションの種類:</sys:String>
+    <!-- AO equal to Activation Object -->
+    <sys:String x:Key="Activate_License_AD.ObjectName">AO 名前: </sys:String>
+    <sys:String x:Key="Activate_License_AD.ObjectDN">AO DN: </sys:String>
+    <sys:String x:Key="Activate_License_AD.ExtendedPid">AO に含まれる PID: </sys:String>
+    <sys:String x:Key="Activate_License_AD.AID">AO アクティベーション ID: </sys:String>
+    <sys:String x:Key="Activate_License_KMS.Host">KMS ホスト:</sys:String>
+    <sys:String x:Key="Activate_License_KMS_Host_Caching">ホストキャッシュ:</sys:String>
+    <sys:String x:Key="Activate_License_KMS_Host_Caching.Enabled">有効</sys:String>
+    <sys:String x:Key="Activate_License_KMS_Host_Caching.Disabled">無効</sys:String>
+    <sys:String x:Key="Activate_License_KMS.Act_Interval">アクティブ化間隔:</sys:String>
+    <sys:String x:Key="Activate_License_KMS.Renew_Interval">更新間隔:</sys:String>
+
+    <sys:String x:Key="Activate_License_Period.Infinite">無限</sys:String>
+    <sys:String x:Key="Activate_License_Period.Day">{0} 日</sys:String>
+    <sys:String x:Key="Activate_License_Period.Hour">{0} 時</sys:String>
+    <sys:String x:Key="Activate_License_Period.Minute">{0} 分</sys:String>
+
+    <sys:String x:Key="Activate_License_Button.Copy_LicenseID">ライセンスIDをコピー</sys:String>
+    <sys:String x:Key="Activate_License_Button.Copy_TenantID">テナントIDをコピー</sys:String>
+    <sys:String x:Key="Activate_License_Button.Copy_UserID">ユーザーIDをコピー</sys:String>
+    <sys:String x:Key="Activate_License_Button.Delete_License">ライセンスを削除</sys:String>
+    <sys:String x:Key="Activate_License_Button.Copy_SKU">コピーSKU ID</sys:String>
+    <sys:String x:Key="Activate_License_Button.Copy_IID">コピーインストールID</sys:String>
+    <sys:String x:Key="Activate_License_Button.Uninstall_Key">キーをアンインストール</sys:String>
+
+    <sys:String x:Key="Activate_Licenses_List">ライセンス一覧</sys:String>
+    <sys:String x:Key="Activate_Licenses_List_Type_To_Search">ライセンス一覧をフィルタリングする</sys:String>
+    <sys:String x:Key="Activate_Licenses_List_ID">製品のID:</sys:String>
+
+    <!-- Toolbox page -->
+    <sys:String x:Key="Toolbox_Repair">修復</sys:String>
+    <sys:String x:Key="Toolbox_Learn_More">詳しく知る</sys:String>
+
+    <sys:String x:Key="Toolbox_General_Tools">一般</sys:String>
+    <sys:String x:Key="Toolbox_Query_Office_Version">Officeバージョンのクエリ</sys:String>
+    <sys:String x:Key="Toolbox_Query_Office_Version.Description">Microsoft から Office 更新チャネル情報を照会します。</sys:String>
+    <sys:String x:Key="Toolbox_Query_Office_Version_GoBack">Back to toolbox page.</sys:String>
+    <sys:String x:Key="Toolbox_Query_Office_Version_Button">クエリ</sys:String>
+    <sys:String x:Key="Toolbox_Query_Office_Version_List">Office更新チャネル情報</sys:String>
+    <sys:String x:Key="Toolbox_Query_Office_Version_List_Channel">チャネル</sys:String>
+    <sys:String x:Key="Toolbox_Query_Office_Version_List_Branch">ブランチ</sys:String>
+    <sys:String x:Key="Toolbox_Query_Office_Version_List_Version">バージョン</sys:String>
+    <sys:String x:Key="Toolbox_Query_Office_Version_List_CreatedTime">作成時間</sys:String>
+    <sys:String x:Key="Toolbox_Query_Office_Version_Copy">バージョン番号をコピー</sys:String>
+    <sys:String x:Key="Toolbox_Query_ErrorCode">エラーコードの説明を表示する</sys:String>
+    <sys:String x:Key="Toolbox_Query_ErrorCode.Description">エラー コードは通常「0x」で始まります。たとえば、0x2 や 0x80070002 などです。</sys:String>
+    <sys:String x:Key="Toolbox_Query_ErrorCode_Button">クエリ</sys:String>
+    <sys:String x:Key="Toolbox_Input_ErrorCode">エラーコードを入力してください</sys:String>
+    <sys:String x:Key="Toolbox_Check_KMS">KMS ホストの可用性をテストする</sys:String>
+    <sys:String x:Key="Toolbox_Check_KMS.Description">TCPing を使用して、KMS ホストが接続できるかどうかをテストします。</sys:String>
+    <sys:String x:Key="Toolbox_Check_KMS_Button">テスト</sys:String>
+
+    <sys:String x:Key="Toolbox_Office_Tools">Office 工具</sys:String>
+    <sys:String x:Key="Toolbox_Remove_Office">Officeを削除</sys:String>
+    <sys:String x:Key="Toolbox_Remove_Office.Description">Office 関連のコンポーネントとレジストリを削除します。</sys:String>
+    <sys:String x:Key="Toolbox_Remove_Office.Description_Bold">注: Office は、正常にアンインストールできない場合にのみ削除してください。</sys:String>
+    <sys:String x:Key="Toolbox_Remove_Office_Button">削除</sys:String>
+    <sys:String x:Key="Toolbox_Remove_APPX">Office の Microsoft Store バージョンも削除する。</sys:String>
+    <sys:String x:Key="Toolbox_Remove_Clear_Activation">アクティブも削除する</sys:String>
+    <sys:String x:Key="Toolbox_Remove_Result">削除したリザルト</sys:String>
+    <sys:String x:Key="Toolbox_Collect_InstallerLog">Officeインストールログを収集する</sys:String>
+    <sys:String x:Key="Toolbox_Collect_InstallerLog.Description">ログを収集して、未知の問題を分析および解決します。</sys:String>
+    <sys:String x:Key="Toolbox_Collect_InstallerLog_Button">収集する</sys:String>
+    <sys:String x:Key="Toolbox_Change_UpdateChannel">Office更新チャネルを変更する</sys:String>
+    <sys:String x:Key="Toolbox_Change_UpdateChannel.Description">更新チャネルを変更すると、再インストールせずにOfficeをアップグレードまたはダウングレードできます。</sys:String>
+    <sys:String x:Key="Toolbox_Change_Owner">Office製品所有者を変更する</sys:String>
+    <sys:String x:Key="Toolbox_Change_Owner.Description">この名前は、Office アプリケーションの [アカウント] ページに表示されます。</sys:String>
+    <sys:String x:Key="Toolbox_Change_Owner_Set">所有者名を設定します。</sys:String>
+    <sys:String x:Key="Toolbox_Change_Owner_Reset">所有者名を既定値にリセットする</sys:String>
+    <sys:String x:Key="Toolbox_Change_Owner_Name">所有者名</sys:String>
+    <sys:String x:Key="Toolbox_Change_Owner_Name.Description">製品所有者名を設定します。 たとえば、「吉田」を使用してすべての製品を変更し、「ProPlus 2019 Volume:吉田」を使用して、指定した製品を変更します。</sys:String>
+    <sys:String x:Key="Toolbox_Change_Owner_Name.LearnMore">詳しくは、所有者名の表示形式についての記事をご覧ください。</sys:String>
+    <sys:String x:Key="Toolbox_Repair_DocumentIcon">Officeドキュメントのアイコンを修復する</sys:String>
+    <sys:String x:Key="Toolbox_Repair_DocumentIcon.Description">これにより、Office ドキュメントの関連付けがリセットされます。</sys:String>
+    <sys:String x:Key="Toolbox_Backup_Restore_Settings">Office の設定をバックアップまたは復元する</sys:String>
+    <sys:String x:Key="Toolbox_Backup_Restore_Settings.Description">Office アプリケーション設定をバックアップまたは復元します。 ファイルとコンテンツは含まれません。&#x000A;注:バックアップを共有しないでください、それはあなたの個人情報を漏らす可能性があります。</sys:String>
+    <sys:String x:Key="Toolbox_Backup_Exclude_PersonalInf">バックアップ時に個人情報を除外します。</sys:String>
+    <sys:String x:Key="Toolbox_Backup">バックアップ</sys:String>
+    <sys:String x:Key="Toolbox_Restore">復元</sys:String>
+    <sys:String x:Key="Toolbox_Reset_OfficeSettings">Office を既定の設定にリセットします</sys:String>
+    <sys:String x:Key="Toolbox_Reset_OfficeSettings.Description">必要に応じて、Office を既定の設定にリセットします。 開始する前に、すべての Office アプリケーションを閉じます。</sys:String>
+    <sys:String x:Key="Toolbox_Reset_OfficeSettings_Button">リセット</sys:String>
+    <sys:String x:Key="Toolbox_Reset_OfficeSettings_UserSettings">現在のユーザー設定を削除します。</sys:String>
+    <sys:String x:Key="Toolbox_Reset_OfficeSettings_UserSettings.Description">Officeアプリケーションの設定、最近開いたファイル、最近保存した場所が含まれます。</sys:String>
+    <sys:String x:Key="Toolbox_Reset_OfficeSettings_UserAppData">アプリケーション データを削除する</sys:String>
+    <sys:String x:Key="Toolbox_Reset_OfficeSettings_UserAppData.Description">アプリケーションキャッシュが含まれます。</sys:String>
+    <sys:String x:Key="Toolbox_Reset_OfficeSettings_NormalTemplate">標準テンプレートの削除</sys:String>
+    <sys:String x:Key="Toolbox_Reset_OfficeSettings_NormalTemplate.Description">Normal.dotm</sys:String>
+    <sys:String x:Key="Toolbox_Reset_OfficeSettings_GlobalSettings">アプリケーション設定の削除</sys:String>
+
+    <sys:String x:Key="Toolbox_Windows_Tools">Windowsツールキット</sys:String>
+    <sys:String x:Key="Toolbox_Reset_SPPSvc">「Software Protection」をリセットする</sys:String>
+    <sys:String x:Key="Toolbox_Reset_SPPSvc.Description">「Software Protection」サービス (KMS の設定を含む) がリセットされます。</sys:String>
+    <sys:String x:Key="Toolbox_Reset_SPPSvc.LearnMore">「Software Protection」サービスのリセットの詳細については、こちらを参照してください。</sys:String>
+    <sys:String x:Key="Toolbox_Rebuild_ActivationToken">Windows ライセンス認証トークンを再構築する</sys:String>
+    <sys:String x:Key="Toolbox_Rebuild_ActivationToken.Description">これにより、Windows ライセンス認証トークンが再構築されます。Windows のライセンス認証の状態が失われる可能性があります。</sys:String>
+    <sys:String x:Key="Toolbox_Rebuild_ActivationToken.LearnMore">Windows ライセンス認証トークンの再構築の詳細については、こちらを参照してください。</sys:String>
+    <sys:String x:Key="Toolbox_Repair_Variables">システム変数をリセットする</sys:String>
+    <sys:String x:Key="Toolbox_Repair_Variables.Description">これにより、システム変数がデフォルト値にリセットされます。よくわからない場合は使用しないでください。</sys:String>
+    <sys:String x:Key="Toolbox_Repair_Variables.LearnMore">詳しくは、システム変数のリセットについての記事をご覧ください。</sys:String>
+    <sys:String x:Key="Toolbox_Repair_WMI">WMI コンポーネントを修復する</sys:String>
+    <sys:String x:Key="Toolbox_Repair_WMI.Description">これにより、WMI コンポーネントが再登録されます。よくわからない場合は使用しないでください。</sys:String>
+    <sys:String x:Key="Toolbox_Repair_WMI.LearnMore">WMI コンポーネントの修復の詳細については、こちらを参照してください。</sys:String>
+
+    <!-- Convert page -->
+    <sys:String x:Key="Convert_Excel">Excel</sys:String>
+    <sys:String x:Key="Convert_Excel.Description">Excel ドキュメントを変換します。</sys:String>
+    <sys:String x:Key="Convert_PowerPoint">PowerPoint</sys:String>
+    <sys:String x:Key="Convert_PowerPoint.Description">PowerPoint ドキュメントを変換します。</sys:String>
+    <sys:String x:Key="Convert_Word">Word</sys:String>
+    <sys:String x:Key="Convert_Word.Description">Word ドキュメントを変換します。</sys:String>
+    <sys:String x:Key="Convert_Actions">輸入(_I)</sys:String>
+    <sys:String x:Key="Convert_Actions.SelectFiles">ファイルを選択</sys:String>
+    <sys:String x:Key="Convert_Actions.SelectFolder">フォルダーを選択</sys:String>
+    <sys:String x:Key="Convert_Input">入力形式</sys:String>
+    <sys:String x:Key="Convert_Input.Description">フォルダを選択すると、入力形式に一致するファイルのみが輸入されます。</sys:String>
+    <sys:String x:Key="Convert_Output">出力形式</sys:String>
+
+    <sys:String x:Key="Convert_File_List">ファイル一覧</sys:String>
+    <sys:String x:Key="Convert_StartConvert">変換</sys:String>
+    <sys:String x:Key="Convert_StartConvert.ToolTip">ファイル形式の変換を開始する</sys:String>
+    <sys:String x:Key="Convert_RemoveSelected">削除</sys:String>
+    <sys:String x:Key="Convert_SelectAll">すべて選択</sys:String>
+    <sys:String x:Key="Convert_File">ファイル</sys:String>
+    <sys:String x:Key="Convert_NewFormat">新しいフォーマット</sys:String>
+    <sys:String x:Key="Convert_Open_File_Location">ファイルの場所を開く(_O)</sys:String>
+    <sys:String x:Key="Convert_Page_Count">Page {0} of {1}</sys:String>
+    <sys:String x:Key="Convert_Previous_Page">Previous page</sys:String>
+    <sys:String x:Key="Convert_Next_Page">Next page</sys:String>
+
+    <sys:String x:Key="Convert_Settings">変換の設定</sys:String>
+    <sys:String x:Key="Convert_Settings.Description">設定を調整する</sys:String>
+    <sys:String x:Key="Convert_SearchOnSubfolders">サブフォルダを検索可能にする</sys:String>
+    <sys:String x:Key="Convert_SearchOnSubfolders.Description">フォルダを選択すると、そのサブフォルダも含まれます。</sys:String>
+    <sys:String x:Key="Convert_Delete">ファイルを削除する</sys:String>
+    <sys:String x:Key="Convert_Delete.Description">変換が成功したら、元のファイルをごみ箱に移動します。ごみ箱が利用できない場合、ファイルは完全に削除されます。</sys:String>
+    <sys:String x:Key="Convert_HideUI">UIを非表示にする</sys:String>
+    <sys:String x:Key="Convert_HideUI.Description">Officeが動作しているときにアラートウィンドウを非表示にします。</sys:String>
+    <sys:String x:Key="Convert_Rows_Per_Page">Rows per page</sys:String>
+    <sys:String x:Key="Convert_Rows_Per_Page.Description">Set the number of files displayed per page in the file list.</sys:String>
+
+    <!-- File types -->
+    <!-- Common -->
+    <sys:String x:Key="File_Type.All">すべてのファイル</sys:String>
+    <sys:String x:Key="File_Type.Supported">サポートされているすべてのファイル</sys:String>
+    <sys:String x:Key="File_Type.PDF">PDF</sys:String>
+    <sys:String x:Key="File_Type.XPS">XPS 文書</sys:String>
+    <sys:String x:Key="File_Type.TXT">テキスト文書</sys:String>
+    <sys:String x:Key="File_Type.MHTML">単ーファイル Web ページ</sys:String>
+    <sys:String x:Key="File_Type.HTML">Web ページ</sys:String>
+    <sys:String x:Key="File_Type.RTF">リッチ テキスト形式(RTF)</sys:String>
+    <!-- Image -->
+    <sys:String x:Key="File_Type.GIF">アニメーション GIF 形式</sys:String>
+    <sys:String x:Key="File_Type.JPG">JPEG ファイル交換形式</sys:String>
+    <sys:String x:Key="File_Type.PNG">PNG ポータブル ネットワーク グラフィックス形式</sys:String>
+    <sys:String x:Key="File_Type.TIF">TIFF 形式</sys:String>
+    <sys:String x:Key="File_Type.BMP">デバイスに依存しないビットマップ</sys:String>
+    <!-- Video -->
+    <sys:String x:Key="File_Type.MP4">MPEG-4 ビデオ</sys:String>
+    <sys:String x:Key="File_Type.WMV">Windows Media ビデオ</sys:String>
+    <!-- Word -->
+    <sys:String x:Key="File_Type.Word_DOCX">Word 文書</sys:String>
+    <sys:String x:Key="File_Type.Word_DOCM">Word マクロ有効文書</sys:String>
+    <sys:String x:Key="File_Type.Word_DOC">Word 97-2003 文書</sys:String>
+    <sys:String x:Key="File_Type.Word_DOTX">Word テンプレート</sys:String>
+    <sys:String x:Key="File_Type.Word_DOTM">Word マクロ有効テンプレート</sys:String>
+    <sys:String x:Key="File_Type.Word_DOT">Word 97-2003 テンプレート</sys:String>
+    <!-- PowerPoint -->
+    <sys:String x:Key="File_Type.PowerPoint_PPTX">PowerPoint プレゼンテーション</sys:String>
+    <sys:String x:Key="File_Type.PowerPoint_PPTM">PowerPoint マクロ有効 プレゼンテーション</sys:String>
+    <sys:String x:Key="File_Type.PowerPoint_PPT">PowerPoint 97-2003 プレゼンテーション</sys:String>
+    <sys:String x:Key="File_Type.PowerPoint_POTX">PowerPoint テンプレート</sys:String>
+    <sys:String x:Key="File_Type.PowerPoint_POTM">PowerPoint マクロ有効 テンプレート</sys:String>
+    <sys:String x:Key="File_Type.PowerPoint_POT">PowerPoint 97-2003 テンプレート</sys:String>
+    <sys:String x:Key="File_Type.PowerPoint_PPSX">PowerPoint スライドショー</sys:String>
+    <sys:String x:Key="File_Type.PowerPoint_PPSM">PowerPoint マクロ有効 スライドショー</sys:String>
+    <sys:String x:Key="File_Type.PowerPoint_PPS">PowerPoint 97-2003 スライドショー</sys:String>
+    <!-- Excel -->
+    <sys:String x:Key="File_Type.Excel_XLSX">Excel ブック</sys:String>
+    <sys:String x:Key="File_Type.Excel_XLSM">Excel マクロ有効 ブック</sys:String>
+    <sys:String x:Key="File_Type.Excel_XLS">Excel 97-2003 ブック</sys:String>
+    <sys:String x:Key="File_Type.Excel_CSV">CSV UTF-8 (コンマ区切り)</sys:String>
+    <sys:String x:Key="File_Type.Excel_XLTX">Excel テンプレート</sys:String>
+    <sys:String x:Key="File_Type.Excel_XLTM">Excel マクロ有効 テンプレート</sys:String>
+    <sys:String x:Key="File_Type.Excel_XLT">Excel 97-2003 テンプレート</sys:String>
+
+    <!-- Hash checker page -->
+    <sys:String x:Key="Hash_Checker_Hash">Hash</sys:String>
+    <sys:String x:Key="Hash_Checker_Hash.Description">ファイルのHashを生成する, MD5、SHA-1、SHA-256、SHA-384、およびSHA-512をサポートします。</sys:String>
+    <sys:String x:Key="Hash_Checker_Actions">輸入(_I)</sys:String>
+    <sys:String x:Key="Hash_Checker_Actions.SelectFiles">ファイルを選択</sys:String>
+    <sys:String x:Key="Hash_Checker_Actions.SelectFolder">フォルダーを選択</sys:String>
+    <sys:String x:Key="Hash_Checker_SearchOnSubfolders">サブフォルダを検索可能にする</sys:String>
+    <sys:String x:Key="Hash_Checker_SearchOnSubfolders.Description">フォルダを選択すると、そのサブフォルダも含まれます。</sys:String>
+    <sys:String x:Key="Hash_Checker_SearchString">検索文字列</sys:String>
+    <sys:String x:Key="Hash_Checker_SearchString.Description">フォルダを選択するときに、ファイル名が検索文字列と一致するファイルを検索します。</sys:String>
+    <sys:String x:Key="Hash_Checker_DisplayPath">ファイルパスを表示します</sys:String>
+    <sys:String x:Key="Hash_Checker_AutoCompute">自動計算</sys:String>
+    <sys:String x:Key="Hash_Checker_AutoCompute.Description">ファイルの輸入が完了した後、「Hash」値の計算を自動的に開始します。</sys:String>
+    <sys:String x:Key="Hash_Checker_MD5.Description">MD5 を有効または無効にする</sys:String>
+    <sys:String x:Key="Hash_Checker_SHA1.Description">SHA-1 を有効または無効にする</sys:String>
+    <sys:String x:Key="Hash_Checker_SHA256.Description">SHA-256 を有効または無効にする</sys:String>
+    <sys:String x:Key="Hash_Checker_SHA384.Description">SHA-384 を有効または無効にする</sys:String>
+    <sys:String x:Key="Hash_Checker_SHA512.Description">SHA-512 を有効または無効にする</sys:String>
+    <sys:String x:Key="Hash_Checker_Rows_Per_Page">Rows per page</sys:String>
+    <sys:String x:Key="Hash_Checker_Rows_Per_Page.Description">Set the number of files displayed per page in the file list.</sys:String>
+
+    <sys:String x:Key="Hash_Checker_File_List">ファイル一覧</sys:String>
+    <sys:String x:Key="Hash_Checker_TypeToSearch">Hash値を比較するために入力します。</sys:String>
+    <sys:String x:Key="Hash_Checker_StartCompute">計算</sys:String>
+    <sys:String x:Key="Hash_Checker_StartCompute.ToolTip">Hash値の計算を開始します。</sys:String>
+    <sys:String x:Key="Hash_Checker_RemoveAll">すべて削除</sys:String>
+    <sys:String x:Key="Hash_Checker_Export">輸出</sys:String>
+    <sys:String x:Key="Hash_Checker_Export.ToolTip">リザルトをファイルに輸出します。</sys:String>
+    <sys:String x:Key="Hash_Checker_Export.AsTXT">_TXTとして</sys:String>
+    <sys:String x:Key="Hash_Checker_Export.AsCSV">_CSVとして</sys:String>
+    <sys:String x:Key="Hash_Checker_Export.AsMD">_Markdownとして</sys:String>
+    <sys:String x:Key="Hash_Checker_Export.AsJSON">_JSONとして</sys:String>
+    <sys:String x:Key="Hash_Checker_FilePath">ファイルパス</sys:String>
+    <sys:String x:Key="Hash_Checker_FileName">ファイル名</sys:String>
+    <sys:String x:Key="Hash_Checker_Compute_Selected">選択したファイルのHash値を計算する(_C)</sys:String>
+    <sys:String x:Key="Hash_Checker_Open_File_Location">ファイルの場所を開く(_O)</sys:String>
+    <sys:String x:Key="Hash_Checker_Copy_Hash_Value">Hash値のコピー(_H)</sys:String>
+    <sys:String x:Key="Hash_Checker_Create_Hash_File">Hashファイルの作成(_A)</sys:String>
+    <sys:String x:Key="Hash_Checker_Page_Count">Page {0} of {1}</sys:String>
+    <sys:String x:Key="Hash_Checker_Previous_Page">Previous page</sys:String>
+    <sys:String x:Key="Hash_Checker_Next_Page">Next page</sys:String>
+
+    <!-- Settings page -->
+    <sys:String x:Key="Settings_General">一般</sys:String>
+    <sys:String x:Key="Settings_Language">言語</sys:String>
+    <sys:String x:Key="Settings_Language.Description">アプリケーションの表示言語を変更する。</sys:String>
+    <sys:String x:Key="Settings_MatchOS">現在のオペレーティング システムと一致する</sys:String>
+    <sys:String x:Key="Settings_Save">設定を保存</sys:String>
+    <sys:String x:Key="Settings_Save.Description">すべての設定をローカルに保存します。</sys:String>
+
+    <sys:String x:Key="Settings_Appearance">外観と動作</sys:String>
+    <sys:String x:Key="Settings_Theme">テーマ</sys:String>
+    <sys:String x:Key="Settings_Theme_OpenColorSetting">Windowsの色設定</sys:String>
+    <sys:String x:Key="Settings_Background">バックグラウンド</sys:String>
+    <sys:String x:Key="Settings_Background.Description">アプリケーションの背景を変更する。</sys:String>
+    <sys:String x:Key="Settings_Background.Off">オフ</sys:String>
+    <sys:String x:Key="Settings_Background.Acrylic">アクリル効果</sys:String>
+    <sys:String x:Key="Settings_Background.Blur">ぼかし</sys:String>
+    <sys:String x:Key="Settings_Background.Mica">Mica</sys:String>
+    <sys:String x:Key="Settings_Background.Bing">Bingの壁紙</sys:String>
+    <sys:String x:Key="Settings_Background.Local">ローカル画像</sys:String>
+    <sys:String x:Key="Settings_SelectLocalImage.Title">ローカル画像を選択し、アプリケーションの背景に設定する。</sys:String>
+    <sys:String x:Key="Settings_SelectLocalImage.Button">ファイルを選択</sys:String>
+    <sys:String x:Key="Settings_Opacity">不透明度</sys:String>
+    <sys:String x:Key="Settings_Blur">ぼかし</sys:String>
+    <sys:String x:Key="Settings_Topmost">常にトップ</sys:String>
+
+    <sys:String x:Key="Settings_Advanced">詳細設定</sys:String>
+    <sys:String x:Key="Settings_SecurityProtocol">セキュリティプロトコル</sys:String>
+    <sys:String x:Key="Settings_SecurityProtocol.Description">どのTLSプロトコルを使用するかを指定します。アプリケーションがネットワークに接続できる場合は、変更しないでください。</sys:String>
+    <sys:String x:Key="Settings_SecurityProtocol_SystemDefault">システムの既定値</sys:String>
+    <sys:String x:Key="Settings_HardwareAcceleration">ハードウェアアクセラレーション</sys:String>
+    <sys:String x:Key="Settings_HardwareAcceleration.Description">アプリケーションが正常に動作している場合は、変更しないでください。無効にすると、アプリケーションのパフォーマンスが低下します。</sys:String>
+
+    <sys:String x:Key="Settings_Deploy">展開</sys:String>
+    <sys:String x:Key="Settings_Deploy_Operation">展開後</sys:String>
+    <sys:String x:Key="Settings_Deploy_Operation.Description">Office のダウンロードまたはインストールが完了した後に実行するアクション。</sys:String>
+    <sys:String x:Key="Settings_Deploy_Operation.None">なし</sys:String>
+    <sys:String x:Key="Settings_Deploy_Operation.Quit">Office Tool Plus を閉じる</sys:String>
+    <sys:String x:Key="Settings_Deploy_Operation.SignOut">サインアウト</sys:String>
+    <sys:String x:Key="Settings_Deploy_Operation.Shutdown">シャットダウン</sys:String>
+    <sys:String x:Key="Settings_Deploy_Operation.Reboot">再起動</sys:String>
+    <sys:String x:Key="Settings_Deploy_LanguageFormat">Office言語表示形式</sys:String>
+    <sys:String x:Key="Settings_Deploy_LanguageFormat.Default">既定の名前</sys:String>
+    <sys:String x:Key="Settings_Deploy_LanguageFormat.Native">ネイティブ名</sys:String>
+    <sys:String x:Key="Settings_Deploy_LanguageFormat.English">英語名</sys:String>
+    <sys:String x:Key="Settings_Deploy_LanguageFormat.Localized">ローカライズ名</sys:String>
+    <sys:String x:Key="Settings_Deploy_Internal">非公開の製品およびアクセスを表示する</sys:String>
+
+    <sys:String x:Key="Settings_Download">ダウンロードのみ</sys:String>
+    <sys:String x:Key="Settings_Download_Ask_Where_To_Save">ファイルの保存場所を確認</sys:String>
+    <sys:String x:Key="Settings_Download_Ask_Where_To_Save.Description">ダウンロードする前に、Officeインストールファイルが保存されている場所を確認する。</sys:String>
+    <sys:String x:Key="Settings_Download_Engine">ダウンローダーのエンジン</sys:String>
+    <sys:String x:Key="Settings_Download_Engine.Description">ダウンロードに使用するダウンローダーエンジンを選択する。</sys:String>
+    <sys:String x:Key="Settings_Download_Engine.Xunlei">Xunlei</sys:String>
+    <!-- Do not translate 'bezzad.Downloader' -->
+    <sys:String x:Key="Settings_Download_Engine.Downloader">bezzad.Downloader</sys:String>
+    <sys:String x:Key="Settings_Download_Engine.OfficeToolPlus">Office Tool Plus</sys:String>
+    <sys:String x:Key="Settings_Download_Engine.OfficeDeploymentTool">Office 展開ツール</sys:String>
+    <sys:String x:Key="Settings_Download_HTTPS">HTTPS を使用して接続する</sys:String>
+    <sys:String x:Key="Settings_Download_HTTPS.Description">Officeのダウンロードに問題がある場合は、有効にしてみてください。</sys:String>
+    <sys:String x:Key="Settings_Download_Verify">ファイルを検証</sys:String>
+    <sys:String x:Key="Settings_Download_Verify.Description">ダウンロード後に Office のインストールを確認します。</sys:String>
+    <sys:String x:Key="Settings_Download_UA">Windows バージョン</sys:String>
+    <sys:String x:Key="Settings_Download_UA.Description">既定では、現在のシステムに適したバージョンの Office がダウンロードされます。 他のシステム用のOfficeをダウンロードする場合は、これを変更してください。</sys:String>
+    <sys:String x:Key="Settings_Download_UA.AutoDetection">自動検出</sys:String>
+    <!-- Do not translate 'bezzad.Downloader' -->
+    <sys:String x:Key="Settings_Download_Downloader">bezzad.Downloader 設定</sys:String>
+    <sys:String x:Key="Settings_Download_Downloader_Chunks">チャンク</sys:String>
+    <sys:String x:Key="Settings_Download_Downloader_Chunks.Description">ダウンロード用にファイルを指定された数のチャンクに分割します。 設定値が高すぎると、ダウンロード速度が遅くなる可能性があります。</sys:String>
+    <sys:String x:Key="Settings_Download_Downloader_Parallel">並列ダウンロード</sys:String>
+    <sys:String x:Key="Settings_Download_Downloader_Parallel.Description">このオプションを有効にすると、従来の機械式ハードディスク (HDD) の書き込み速度が低下する可能性があります。 この現象はブロック数が多い場合に特に顕著になります。</sys:String>
+    <sys:String x:Key="Settings_Download_Downloader_Limit">ダウンロード速度制限</sys:String>
+    <sys:String x:Key="Settings_Download_Downloader_Limit.Description">ファイルのダウンロード速度を制限します。 単位はKB/sです。 既定値は 0 (無制限) です。</sys:String>
+    <sys:String x:Key="Settings_Download_Proxy">プロキシ</sys:String>
+    <sys:String x:Key="Settings_Download_Proxy.Description">Office をダウンロードするときに使用するプロキシを設定します。</sys:String>
+    <sys:String x:Key="Settings_Download_Proxy.Type">プロキシの種類</sys:String>
+    <sys:String x:Key="Settings_Download_Proxy.None">なし</sys:String>
+    <sys:String x:Key="Settings_Download_Proxy.HTTP">HTTP</sys:String>
+    <sys:String x:Key="Settings_Download_Proxy.Socket4">Socket 4</sys:String>
+    <sys:String x:Key="Settings_Download_Proxy.Socket5">Socket 5</sys:String>
+    <sys:String x:Key="Settings_Download_Proxy_Host">Host</sys:String>
+    <sys:String x:Key="Settings_Download_Proxy_Host.Hint">127.0.0.1:1080</sys:String>
+    <sys:String x:Key="Settings_Download_Proxy_Username">Username</sys:String>
+    <sys:String x:Key="Settings_Download_Proxy_Password">Password</sys:String>
+    <sys:String x:Key="Settings_Download_Proxy_Optional">Optional</sys:String>
+
+    <!-- About page -->
+    <sys:String x:Key="About_Link.Homepage">ホームページ</sys:String>
+    <sys:String x:Key="About_Link.Docs">ヘルプマニュアル</sys:String>
+    <sys:String x:Key="About_Link.Sponsor">スポンサー</sys:String>
+    <sys:String x:Key="About_Link.Report_Issue">問題を報告</sys:String>
+    <sys:String x:Key="About_Version">バージョン</sys:String>
+    <sys:String x:Key="About_ReleaseDate">発売日:</sys:String>
+    <sys:String x:Key="About_CheckUpdate">更新を確認する(_C)</sys:String>
+    <sys:String x:Key="About_CreatorInfo">Yerongが開発・維持する，「Office 展開ツール」に基づいて。</sys:String>
+    <sys:String x:Key="About_Copyright">Copyright © 2016-{0} Yerong All Rights Reserved.</sys:String>
+    <sys:String x:Key="About_TrademarkInfo">Microsoft Officeは、Microsoft Corporationの米国およびその他の国における登録商標または商標です。</sys:String>
+
+    <sys:String x:Key="About_Server_Provider">サーバープロバイダー</sys:String>
+    <sys:String x:Key="About_Translator">翻訳者</sys:String>
+
+    <sys:String x:Key="About_MoreInfo">詳細情報</sys:String>
+    <sys:String x:Key="About_Image_Source">背景画像ソース</sys:String>
+    <sys:String x:Key="About_Link.OpenSourceNotice">オープンソースの通知</sys:String>
+
+    <!-- Downloader -->
+    <sys:String x:Key="Downloader_Resume">続ける</sys:String>
+    <sys:String x:Key="Downloader_Pause">中断</sys:String>
+    <sys:String x:Key="Downloader_Cancel">取り消す</sys:String>
+    <sys:String x:Key="Downloader_SetSpeedLimit.Name">ダウンロード速度制限を設定する</sys:String>
+    <sys:String x:Key="Downloader_Percentage">ダウンロード、 {0} 完了</sys:String>
+    <sys:String x:Key="Downloader_Remaining">ダウンロード、残り {0} </sys:String>
+    <sys:String x:Key="Downloader_Pending">ダウンロードを待っています</sys:String>
+    <sys:String x:Key="Downloader_Pausing">一時停止中</sys:String>
+    <sys:String x:Key="Downloader_Paused">一時停止</sys:String>
+
+    <!-- Notification strings -->
+    <sys:String x:Key="Message">メッセージ</sys:String>
+    <sys:String x:Key="Notice">通知</sys:String>
+    <sys:String x:Key="Warning">警告</sys:String>
+    <sys:String x:Key="Error">エラー</sys:String>
+    <sys:String x:Key="Yes">はい(_Y)</sys:String>
+    <sys:String x:Key="No">いいえ(_N)</sys:String>
+    <sys:String x:Key="OK">_OK</sys:String>
+    <sys:String x:Key="Cancel">取り消す(_C)</sys:String>
+
+    <!-- Inpupt box strings-->
+    <sys:String x:Key="Input_Command">アプリケーションコマンドを入力してください</sys:String>
+    <sys:String x:Key="Input_URL">URLを入力してください</sys:String>
+    <sys:String x:Key="Input_Xunlei_Speed_Limit">Xunlei のダウンロード速度制限を設定します。(KB/s)</sys:String>
+
+    <!-- Office ISO Context Menu -->
+    <!-- What is &amp; means? '&amp;' stands for '&', so it is &Install now, users can press the hotkey (I) to execute the command when menu is opened. -->
+    <!-- Learn more about hotkey and autorun.inf: https://en.wikipedia.org/wiki/Autorun.inf#:~:text=shell%5Cverb%3Dmenu%20text -->
+    <!-- If you cannot understand what is hotkey, remove '&amp;' when you are translating. -->
+    <sys:String x:Key="CD-ROM_InstallNow">&amp;今すぐインストール</sys:String>
+
+    <!-- Task Message -->
+    <sys:String x:Key="Task_Checking_Updates">アップデート確認中</sys:String>
+    <sys:String x:Key="Task_Downloading_Updates">アップデートファイルを準備中、{0}完了 ({1} of {2}).</sys:String>
+    <sys:String x:Key="Task_Verifying_Installation_Files">ファイルを検証中。お待ちください。</sys:String>
+    <sys:String x:Key="Task_Loading_Preferences">アプリケーション設定を読み込んでいます。お待ちください。</sys:String>
+    <sys:String x:Key="Task_Downloading_Web_Config">Web ページから構成ファイルを取得中。 お待ちください。</sys:String>
+    <sys:String x:Key="Task_Preparing_Download">Officeをダウンロードする準備をしています。</sys:String>
+    <!-- Example: Creating Office ISO file, file size: 3.1GB, 45% completed. -->
+    <sys:String x:Key="Task_Creating_ISO">Office ISO ファイルの作成中、ファイルサイズ：{0}、{1} 完了。</sys:String>
+    <sys:String x:Key="Task_ODT">今すぐ展開中ですので、しばらくお待ちください。</sys:String>
+    <sys:String x:Key="Task_SPP">SPPは現在実行中です。お待ちください。</sys:String>
+    <sys:String x:Key="Task_Searching_KMS_Events">コンピューターでKMSライセンス認証イベントを検索する: {0}</sys:String>
+    <sys:String x:Key="Task_Searching_IAF_Events">マシンでインターネットアクティベーションイベントを検索する: {0}</sys:String>
+    <sys:String x:Key="Task_Checking_Office_Update_Channel">Office更新チャンネルの情報をチェック中</sys:String>
+    <sys:String x:Key="Task_Testing_KMS_Host">KMSホストの可用性をテスト中</sys:String>
+    <sys:String x:Key="Task_Collecting_Installer_Logs">Officeインストーラーログの収集中</sys:String>
+    <sys:String x:Key="Task_Removing_Office">Officeを削除中</sys:String>
+    <sys:String x:Key="Task_Repairing_WMI">WMIコンポーネントを修復中。しばらくお待ちください。</sys:String>
+    <sys:String x:Key="Task_Converting_Documents">Officeドキュメントを変換中。残り{0}。</sys:String>
+    <sys:String x:Key="Task_Importing_Files">ファイルが輸入中。お待ちください。</sys:String>
+    <sys:String x:Key="Task_Computing_Hash">ただいまHashを計算中、{0}ファイルは残っています。</sys:String>
+    <sys:String x:Key="Task_Exporting_Hash">リザルトを輸出中、お待ちください。</sys:String>
+    <!-- Example: Installing iSlide, please wait. -->
+    <sys:String x:Key="Task_Installing_App">{0}をインストール中。お待ちください。</sys:String>
+
+    <!-- Question Message -->
+    <sys:String x:Key="Ques_Update.Title">Office Tool Plusの更新</sys:String>
+    <sys:String x:Key="Ques_Update.Content">更新が利用可能です、今すぐダウンロードしますか?</sys:String>
+    <sys:String x:Key="Ques_Exit">Office Tool Plusは起動中ですが停止しますか？</sys:String>
+    <sys:String x:Key="Ques_Can_Not_Verify_Signature">ファイルの署名を確認できません。それでも開きますか?&#x000A;&#x000A;ファイル: {0}</sys:String>
+    <sys:String x:Key="Ques_Quick_Installation">{0} のインストールを選択しました。.&#x000A;&#x000A;ダウンロード完了後にインストールしたい場合は「はい」をクリックしてください。ダウンロード処理中に同時にインストールしたい場合は「いいえ」をクリックしてください。キャンセルするにはウィンドウを閉じてください。インストール操作。</sys:String>
+    <sys:String x:Key="Ques_Select_Office_To_Download">Office バージョンを {0} に指定しましたが、別のバージョンが返されます。&#x000A;&#x000A;[はい] をクリックすると、Office のバージョン {1} がダウンロードされます。&#x000A;[いいえ] をクリックすると、Office のバージョン {2} がダウンロードされます。</sys:String>
+    <sys:String x:Key="Ques_Verify_Installation_Files">潜在的なエラーを探すためにOfficeインストールファイルを検証しますか？</sys:String>
+    <sys:String x:Key="Ques_Deploy_Office">Office を展開する準備はできましたか?</sys:String>
+    <sys:String x:Key="Ques_Deploy_Office.ToInstall">インストールする製品:</sys:String>
+    <sys:String x:Key="Ques_Deploy_Office.ToUninstall">アンインストールする製品:</sys:String>
+    <sys:String x:Key="Ques_Install_Office.Applications">アプリケーション: {0}</sys:String>
+    <sys:String x:Key="Ques_Install_Office.Architecture">アーキテクチャ: {0}</sys:String>
+    <sys:String x:Key="Ques_Install_Office.UpdateChannel">更新チャネル: {0}</sys:String>
+    <sys:String x:Key="Ques_Install_Office.OfficeVersion">Office のバージョン: {0}</sys:String>
+    <sys:String x:Key="Ques_Install_Office.SourcePath">インストール ファイルのソース: {0}</sys:String>
+    <sys:String x:Key="Ques_Deploy_Configuration">詳細な設定については、コードを確認してください。上記の基本設定は正しいですか？</sys:String>
+    <sys:String x:Key="Ques_Delete_All_Installations">すべてのインストール ファイルを削除してもよろしいですか?</sys:String>
+    <sys:String x:Key="Ques_Delete_Installation">{0}を削除してもよろしいですか?</sys:String>
+    <sys:String x:Key="Ques_Delete_Installation_Languages">{0}を削除してもよろしいですか?</sys:String>
+    <sys:String x:Key="Ques_Install_iSlide">今すぐiSlideをインストールしてもよろしいですか?</sys:String>
+    <sys:String x:Key="Ques_Clear_Activation">すべてのライセンスとキーをアンインストールしてもよろしいですか?この操作の後、ライセンスを再インストールし、Officeを再アクティブ化する必要があります。</sys:String>
+    <sys:String x:Key="Ques_Install_Licenses">アクティベーション情報は、Officeライセンスのインストール後にOfficeに表示されない場合がありますが、Office Tool Plusを使用して照会または有効化することができます。続行しますか？</sys:String>
+    <sys:String x:Key="Ques_Uninstall_Licenses">すべての Office ライセンスをアンインストールしてもよろしいですか?</sys:String>
+    <sys:String x:Key="Ques_Uninstall_All_Keys">すべての Office プロダクトキーをアンインストールしてもよろしいですか?必要に応じて、最初にキーをバックアップしてください。</sys:String>
+    <sys:String x:Key="Ques_Uninstall_Product_Key">プロダクトキーをアンインストールしてもよろしいですか?</sys:String>
+    <sys:String x:Key="Ques_Delete_vNextLicense">ライセンスを削除してもよろしいですか?</sys:String>
+    <sys:String x:Key="Ques_Remove_Office">Officeをクリアしてもよろしいですか？一度始めると、キャンセルすることはできません。</sys:String>
+    <sys:String x:Key="Ques_Invoke_Office_Update">更新チャネルが変更されました。今すぐ Office の更新プログラムを確認しますか?</sys:String>
+
+    <!-- Info Message -->
+    <sys:String x:Key="Info_OS_Outdated">お使いのOSはサポートされなくなりました。OSをアップグレードするか、古いバージョンの Office Tool Plus をダウンロードして使用してください。</sys:String>
+    <sys:String x:Key="Info_User_Role">Office Tool Plus は通常の権限で起動されますが、一部の機能は使用できなくなります。</sys:String>
+    <sys:String x:Key="Info_Restart_Required">有効にするには、アプリケーションを再起動する必要があります。</sys:String>
+    <sys:String x:Key="Info_No_Updates">最新バージョンのOffice Tool Plusを使用しています。</sys:String>
+    <sys:String x:Key="Info_Update_In_Progress">更新が進行中です。しばらくお待ちください。</sys:String>
+    <sys:String x:Key="Info_Updates_Incomplete">一部の更新を適用できませんでした。後でもう一度試してください。</sys:String>
+    <sys:String x:Key="Info_No_Language_Added_For_Download">言語が追加されていないことが検出されました。ほとんどの場合、問題を回避するために言語を追加することをお勧めします。</sys:String>
+    <sys:String x:Key="Info_Select_Where_To_Save_Office_Installation">Officeインストールファイルを保存するフォルダを選択してください。&#x000A;デフォルトの場所を使用するには、設定ページで「ファイルの保存場所を確認」を無効にします。</sys:String>
+    <sys:String x:Key="Info_All_Files_Exist">ダウンロードするファイルはありません。すべてのファイルが存在します。</sys:String>
+    <sys:String x:Key="Info_Office_Downloading">Officeがダウンロードされています。</sys:String>
+    <sys:String x:Key="Info_Software_Installation_Complete">インストールが完了しました。</sys:String>
+    <sys:String x:Key="Info_Software_Installation_Failed">インストールに失敗しました。</sys:String>
+    <sys:String x:Key="Info_Auto_Shutdown">PC は 1 分でサインアウト/シャットダウン/再起動します。</sys:String>
+    <sys:String x:Key="Info_No_Events">イベントが見つかりませんでした。</sys:String>
+    <sys:String x:Key="Info_No_Office_Licenses">Office ライセンスが見つかりませんでした。</sys:String>
+    <sys:String x:Key="Info_Number_Of_Keys_Uninstalled">アンインストールされたOfficeプロダクトキーの数: {0}</sys:String>
+    <sys:String x:Key="Info_Number_Of_Lics_Uninstalled">アンインストールされたOfficeライセンスの数: {0}</sys:String>
+    <sys:String x:Key="Info_Office_License_Activation.Title">製品のライセンス認証の結果</sys:String>
+    <sys:String x:Key="Info_Office_License_Activation_Successful">製品のライセンス認証に成功しました。</sys:String>
+    <sys:String x:Key="Info_KMS_Test_Result.Success">KMSテスト方法: {0}.テスト結果:成功、経過時間: {1}ms。</sys:String>
+    <sys:String x:Key="Info_KMS_Test_Result.Failed">KMSテストの失敗。</sys:String>
+    <sys:String x:Key="Info_Enable_Mica">マイカ効果を使用するには、Windows11を表示する必要があります。</sys:String>
+
+    <!-- Success Message -->
+    <sys:String x:Key="Success_Download_Updates">アップデートが正常に適用されました。</sys:String>
+    <sys:String x:Key="Success_Add_Download_Task">ダウンロードタスクが正常に追加されました。</sys:String>
+    <sys:String x:Key="Success_Create_ISO">Office ISO ファイルが作成されます。</sys:String>
+    <sys:String x:Key="Success_Installation_Verify">インストールファイルが検証され、エラーは見つかりませんでした。</sys:String>
+    <sys:String x:Key="Success_Installer_Exited">「Office 展開ツール」は正常に終了しました。</sys:String>
+    <sys:String x:Key="Success_Apply_Preferences">Officeアプリケーションの基本設定が正常に適用されました。</sys:String>
+    <sys:String x:Key="Success_Install_Licenses">Officeライセンスが正常にインストールされました。</sys:String>
+    <sys:String x:Key="Success_Install_Product_Key">プロダクトキーが正常にインストールされました。</sys:String>
+    <sys:String x:Key="Success_Set_KMS">KMS設定が正常に適用されました。</sys:String>
+    <sys:String x:Key="Success_Save">保存しました。</sys:String>
+    <sys:String x:Key="Success_Collect_Logs">ログファイルは収集され、次の場所に保存されます： {0}</sys:String>
+    <sys:String x:Key="Success_Repair">修理は成功しました</sys:String>
+    <sys:String x:Key="Success_Repair_System_Variables">システム変数のリセットが完了しました。変更を有効にするには、システムを再起動してください。</sys:String>
+    <sys:String x:Key="Success_Repair_WMI_Components">WMIコンポーネントの修復が完了しました。変更を有効にするためにシステムを再起動してください。</sys:String>
+
+    <!-- Error Message -->
+    <sys:String x:Key="Err_Create_Temp_Path">一時パスを作成できません。 システム変数を確認して、再試行してください。</sys:String>
+    <sys:String x:Key="Err_Already_Running">Office Tool Plusは現在実行中</sys:String>
+    <sys:String x:Key="Err_Perform_Update">更新中にエラーが発生しました。最新バージョンのOffice Tool Plusを手動でダウンロードしてください。</sys:String>
+    <sys:String x:Key="Err_Unknown_Command">不明なコマンド: {0}</sys:String>
+    <sys:String x:Key="Err_Command_Parameter">必須パラメータがありません。</sys:String>
+    <sys:String x:Key="Err_Checking_Installation">インストールファイルの確認中にエラーが発生しました。後でもう一度やり直すか、Office インストール ファイルを再ダウンロードしてください。</sys:String>
+    <sys:String x:Key="Err_Installation">インストールファイル({0})にエラーが含まれています。&#x000A;{1}</sys:String>
+    <sys:String x:Key="Err_Installation_File_Missing">ファイルがありません： {0}</sys:String>
+    <sys:String x:Key="Err_Installation_Hash">Hashチェックに失敗しました、ファイル:{0}&#x000A;ターゲットのHash値: {1}&#x000A;実際のHash値: {2}</sys:String>
+    <sys:String x:Key="Err_Installation_Version">バージョン チェックの失敗、ファイル: {0}&#x000A;ターゲットのバージョン: {1}&#x000A;実際のバージョン: {2}</sys:String>
+    <sys:String x:Key="Err_Installation_Mismatch">バージョンが一致しません。ファイル: {0}&#x000A;実際のバージョン: {1}&#x000A;アーキテクチャ: {2}</sys:String>
+    <sys:String x:Key="Err_Installation_Redownload">インストールファイルにエラーが含まれていますので、削除して再度ダウンロードしてください。</sys:String>
+    <sys:String x:Key="Err_Reading_Info">Office 情報の読み取り中にエラーが発生しました。</sys:String>
+    <sys:String x:Key="Err_Saving_Info">Office 情報の保存中にエラーが発生しました。</sys:String>
+    <sys:String x:Key="Err_Start_Deploy.Download">Office をダウンロードできない場合は、製品または言語を追加したことを確認してから、もう一度やり直してください。</sys:String>
+    <sys:String x:Key="Err_Start_Deploy.Deploy">Office を展開できない場合は、基本設定が正しく設定されていることを確認してから、もう一度やり直してください。</sys:String>
+    <sys:String x:Key="Err_Start_Deploy.Preferences">アプリケーション設定を設定できない場合は、アプリケーション設定が正しく設定されていることを確認してから、もう一度やり直してください。</sys:String>
+    <sys:String x:Key="Err_Installer_Exited">「Office 展開ツール」の終了中にエラーが発生しました。</sys:String>
+    <sys:String x:Key="Err_Prepare_To_Download_Office">バージョン情報を取得できません。もう一度試すか、エンジンを「Office 展開ツール」に切り替えてください。</sys:String>
+    <sys:String x:Key="Err_Create_ISO">Office Tool Plus のルートディレクトリにOfficeのインストールファイルが見つかりません。最初にインストールファイルをダウンロードするか、インストールファイルを作業パスに移動してください。</sys:String>
+    <sys:String x:Key="Err_Query_Office_Licenses">Office ライセンスを照会できません。もう一度やり直してください。</sys:String>
+    <sys:String x:Key="Err_Loading_Office_Licenses">このコンピューターで Office の「クイック実行」バージョンが検出されなかったため、Office ライセンスを読み込めませんでした。最新バージョンの Office がインストールされていることを確認してください。</sys:String>
+    <sys:String x:Key="Err_Product_Key_Invalid">入力したプロダクトキーが無効です。確認して再試行してください。</sys:String>
+    <sys:String x:Key="Err_Confirmation_ID_Invalid">入力された確認IDが無効です。確認してから再度お試しください。</sys:String>
+    <sys:String x:Key="Err_KMS_Host_Invalid">KMS 設定を保存できません。KMS ホスト名を確認して、もう一度やり直してください。</sys:String>
+    <sys:String x:Key="Err_No_KMS_Lic">KMS 設定を保存できません。 インストールされている Office KMS ライセンスがシステムに見つかりませんでした。</sys:String>
+    <sys:String x:Key="Err_Set_KMS">KMS 設定を保存できません。もう一度やり直してください。</sys:String>
+    <sys:String x:Key="Err_Act_Run_Commands">コマンドの実行中にエラーが発生しました。&#x000A;&#x000A;エラーコード: {0}</sys:String>
+    <sys:String x:Key="Err_Act_Office_License">製品のアクティベーション中にエラーが発生しました。&#x000A;&#x000A;エラーコード: {0}</sys:String>
+    <sys:String x:Key="Err_Install_Office_Lic">ライセンスのインストール中にエラーが発生しました。&#x000A;&#x000A;エラーコード: {0}</sys:String>
+    <sys:String x:Key="Err_Install_Product_Key">プロダクト キーのインストール中にエラーが発生しました。&#x000A;&#x000A;エラーコード: {0}</sys:String>
+    <sys:String x:Key="Err_Uninstall_Product_Key">プロダクト キーのアンインストール中にエラーが発生しました。&#x000A;&#x000A;エラーコード: {0}</sys:String>
+    <sys:String x:Key="Err_Check_KMS_Status">KMS の状態を確認できません。KMS ホスト名を確認して、もう一度やり直してください。</sys:String>
+    <sys:String x:Key="Err_Office_App_NotFound">コンピュータで {0} が見つかりませんでした。最新バージョンのOfficeがインストールされているかどうかを確認してください。</sys:String>
+    <sys:String x:Key="Err_Open_Clipboard">クリップボードにアクセスできません。もう一度やり直してください。</sys:String>
+
+    <!-- Error messages about Xunlei -->
+    <sys:String x:Key="Xunlei_Err_Init">Xunlei の初期化中にエラーが発生しました。</sys:String>
+    <sys:String x:Key="Xunlei_Err_Start">ダウンロードの開始に失敗しました</sys:String>
+    <sys:String x:Key="Xunlei_Err_Stop">ダウンロードの一時停止に失敗しました</sys:String>
+    <sys:String x:Key="Xunlei_Err_Exit">Xunleiの終了中にエラーが発生しました。</sys:String>
+    <sys:String x:Key="Xunlei_Err_Unknown">未知のダウンロードエラーが発生しました</sys:String>
+    <sys:String x:Key="Xunlei_Err_Create">ファイルの作成に失敗しました</sys:String>
+    <sys:String x:Key="Xunlei_Err_Delete">ファイルを削除できませんでした</sys:String>
+    <sys:String x:Key="Xunlei_Err_FileHash">ファイル全文の検証に失敗しました</sys:String>
+    <sys:String x:Key="Xunlei_Err_PieceHash">ファイルフラグメントの検証に失敗しました</sys:String>
+    <sys:String x:Key="Xunlei_Err_Read">ファイルの読み込みに失敗しました</sys:String>
+    <sys:String x:Key="Xunlei_Err_Rename">ファイルの名前を変更できませんでした</sys:String>
+    <sys:String x:Key="Xunlei_Err_Write">ファイルへの書き込みに失敗しました</sys:String>
+    <sys:String x:Key="Xunlei_Err_DownInvalid">無効なダウンロードアドレス</sys:String>
+    <sys:String x:Key="Xunlei_Err_NotIP">HTTPのダウンロードで使用可能なIPはありません</sys:String>
+    <sys:String x:Key="Xunlei_Err_IDInvalid">TaskID無効</sys:String>
+    <sys:String x:Key="Xunlei_Err_SetProxy">プロキシの設定に失敗しました。</sys:String>
+    <sys:String x:Key="Xunlei_Err_ProxyAuthTypeFailed">プロキシ認証に失敗しました</sys:String>
+    <sys:String x:Key="Xunlei_Err_ProxyAuthTypeUnknown">プロキシの種類が不明です</sys:String>
+    <sys:String x:Key="Xunlei_Err_Timeout">タイムアウト</sys:String>
+    <sys:String x:Key="Xunlei_Err_Crashed">Xunlei エンジンがクラッシュしました。</sys:String>
+    <sys:String x:Key="Xunlei_Err_Cancel">タスクがキャンセルされた</sys:String>
+</ResourceDictionary>
