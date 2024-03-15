@@ -1,99 +1,99 @@
-#
+
 
 <p align="center">
 <img alt="Office Tool Plus Logo" src="https://otp.landian.vip/static/images/logo.webp"/>
 </p>
 
 <p align="center">
-<a href="https://www.coolhub.top/" target="_blank"><img alt="Author" src="https://img.shields.io/badge/Author-Yerong-blue?style=flat-square"/></a>
-<img alt="Language" src="https://img.shields.io/badge/Language-C%23-green?style=flat-square"/>
-<a href="https://otp.landian.vip/" target="_blank"><img alt="Release" 
+<a href="https://www.coolhub.top/" target="_blank"><img alt="Autor" src="https://img.shields.io/badge/Autor-Yerong-blue?style=flat-square"/></a>
+<img alt="Lenguaje" src="https://img.shields.io/badge/Lenguaje-C%23-green?style=flat-square"/>
+<a href="https://otp.landian.vip/" target="_blank"><img alt="Lanzamiento" 
 src="https://img.shields.io/github/v/release/YerongAI/Office-Tool?style=flat-square"/></a>
-<img alt="License" src="https://img.shields.io/github/license/YerongAI/Office-Tool?style=flat-square"/>
+<img alt="Licencia" src="https://img.shields.io/github/license/YerongAI/Office-Tool?style=flat-square"/>
 </p>
 
-> A powerful and useful tool for Office deployments.
+> Una herramienta poderosa y útil para implementaciones de Office.
 
-Supports custom deployment and activation of the following products:
+Admite la implementación personalizada y la activación de los siguientes productos:
 
 - Microsoft 365.
 - Office 2016, 2019, 2021, 2024.
-- Visio 2016, 2019, 2021, 2024 & Online Plan 2.
-- Project 2016, 2019, 2021, 2024 & Online Desktop Client.
+- Visio 2016, 2019, 2021, 2024 y Plan en línea 2.
+- Project 2016, 2019, 2021, 2024 y Cliente de escritorio en línea.
 
-Functions and Features:
+Funciones y características:
 
-- Create Office installation configuration. The config can be exported to local, or imported from local or web.
-- Download Office, supporting `ALL` Office channels and `ALL` Office languages.
-- Install Office or modify the existing Office, such as adding new products and applications, or uninstalling products and applications.
-- Create Office ISO, supports default installation config and silent installation config.
-- Activate Office. Support online activation, phone activation and KMS activation.
-- Support Office activation management, including license management, key management and KMS management.
-- Change Office update channel, support upgrading/downgrading Office without reinstalling Office.
-- Remove Office. Force remove Office while it can’t be uninstalled in normal way, support Office from Office 2003 to the latest Office version.
-- Integrated Office tools, including resetting settings, fixing Office problems.
-- Convert Office documents, based on Office COM. it's fast and stable.
-- Personalize theme, you can build your special Office Tool Plus.
-- Advanced settings allow you to use more advanced features, such as Office internal channels.
+- Crear configuración de instalación de Office. La configuración se puede exportar a local o importar desde local o web.
+- Descargar Office, compatible con `TODOS` los canales de Office y `TODOS` los idiomas de Office.
+- Instalar Office o modificar el Office existente, como agregar nuevos productos y aplicaciones, o desinstalar productos y aplicaciones.
+- Crear ISO de Office, admite la configuración de instalación predeterminada y la configuración de instalación silenciosa.
+- Activar Office. Compatible con la activación en línea, la activación telefónica y la activación KMS.
+- Admite la gestión de activación de Office, incluida la gestión de licencias, la gestión de claves y la gestión de KMS.
+- Cambiar el canal de actualización de Office, admite la actualización/degradación de Office sin reinstalar Office.
+- Eliminar Office. Eliminar Office forzosamente mientras no se puede desinstalar de la manera normal, compatible con Office desde Office 2003 hasta la última versión de Office.
+- Herramientas de Office integradas, incluyendo restablecimiento de configuración, solución de problemas de Office.
+- Convertir documentos de Office, basado en Office COM. Es rápido y estable.
+- Personalizar el tema, puedes construir tu Office Tool Plus especial.
+- La configuración avanzada te permite utilizar más funciones avanzadas, como los canales internos de Office.
 
-## Download and quick start
+## Descargar y comenzar rápidamente
 
-- [Download](https://otp.landian.vip/download.html)
-- [Quick start](https://github.com/YerongAI/Office-Tool/wiki)
-- [Documentation](https://otp.landian.vip/help/)
+- [Descargar](https://otp.landian.vip/download.html)
+- [Inicio rápido](https://github.com/YerongAI/Office-Tool/wiki)
+- [Documentación](https://otp.landian.vip/help/)
 
-Or download Office Tool Plus using PowerShell:
+O descargar Office Tool Plus usando PowerShell:
 
-Site 1:
+Sitio 1:
 
 ```powershell
 irm https://otp.landian.vip/get/ | iex
 ```
 
-Site 2:
+Sitio 2:
 
 ```powershell
 irm https://officetool.plus/get/ | iex
 ```
 
-## Thanks to the Translators
+## Gracias a los traductores
 
-| Culture | Name | Translators |
+| Cultura | Nombre | Traductores |
 | :-- | :-- | :-- |
 | ar-sa | العربية (المملكة العربية السعودية) | [Yarani](https://github.com/Yarani) |
-| de-de | Deutsch (Deutschland) | [Berny23](https://steamcommunity.com/id/Berny23) |
-| en-gb | English (United Kingdom) | [Mcforwin](https://github.com/Mcforwin) |
-| en-us | English (United States) | [Yerong](https://officetool.plus/), [Moedog](https://prprpr.love) |
+| de-de | Alemán (Alemania) | [Berny23](https://steamcommunity.com/id/Berny23) |
+| en-gb | Inglés (Reino Unido) | [Mcforwin](https://github.com/Mcforwin) |
+| en-us | Inglés (Estados Unidos) | [Yerong](https://officetool.plus/), [Moedog](https://prprpr.love) |
 | es-es | Español (España) | Xoseba |
-| fr-fr | Français (France) | Drake4478, MONOKUMA |
-| id-id | Bahasa Indonesia (Indonesia) | [Ida Bagus Anom Sanjaya](https://fb.me/Anom.Sanjaya17), [Jovanzers](https://github.com/jovanzers) |
+| fr-fr | Francés (Francia) | Drake4478, MONOKUMA |
+| id-id | Indonesio (Indonesia) | [Ida Bagus Anom Sanjaya](https://fb.me/Anom.Sanjaya17), [Jovanzers](https://github.com/jovanzers) |
 | it-it | Italiano (Italia) | [garf02](https://github.com/garf02), tfrtint |
-| ja-jp | 日本語 (日本) | [秋山へいわ](https://github.com/akio1321)|
-| ko-kr | 한국어 (대한민국) | [Jay Jang](https://iamx.work), [Oein](https://github.com/Oein), [VenusGirl❤](https://github.com/VenusGirl) |
-| nl-nl | Nederlands (Nederland) | [Kajoe](https://github.com/Kajoe1) |
-| pl-pl | Polski (Polska) | [JakubDriver](https://github.com/jakubdriver) |
-| pt-br | Português (Brasil) | [Hélio de Souza](https://tinyurl.com/hdstec), [Igor Rückert](https://github.com/igorruckert) |
-| ro-ro | Română (România) | [ianymaty](https://github.com/ianymaty) |
-| ru-ru | Русский (Россия) | [Долматов Алексей](https://github.com/iDolmatov) |
-| th-th | ไทย (ไทย) | [Freeling Developer](https://github.com/freelingdeveloper), [泰国孩子在中国](https://github.com/dekthaiinchina) |
-| tr-tr | Türkçe (Türkiye) | [Tayfun Akkoyun](https://github.com/crasadure) |
-| vi-vn | Tiếng Việt (Việt Nam) | [phjtieudoc](https://github.com/phjtieudoc) |
-| zh-hk | 繁體中文 (香港) | [TurboHK](https://github.com/TurboHK) |
-| zh-tw | 繁體中文 (台灣) | [Yi Chi](https://www.cotpear.com), [Yi-Jyun Pan](https://github.com/pan93412) |
+| ja-jp | Japonés (Japón) | [秋山へいわ](https://github.com/akio1321)|
+| ko-kr | Coreano (Corea del Sur) | [Jay Jang](https://iamx.work), [Oein](https://github.com/Oein), [VenusGirl❤](https://github.com/VenusGirl) |
+| nl-nl | Neerlandés (Países Bajos) | [Kajoe](https://github.com/Kajoe1) |
+| pl-pl | Polaco (Polonia) | [JakubDriver](https://github.com/jakubdriver) |
+| pt-br | Portugués (Brasil) | [Hélio de Souza](https://tinyurl.com/hdstec), [Igor Rückert](https://github.com/igorruckert) |
+| ro-ro | Rumano (Rumania) | [ianymaty](https://github.com/ianymaty) |
+| ru-ru | Ruso (Rusia) | [Долматов Алексей](https://github.com/iDolmatov) |
+| th-th | Tailandés (Tailandia) | [Freeling Developer](https://github.com/freelingdeveloper), [泰国孩子在中国](https://github.com/dekthaiinchina) |
+| tr-tr | Turco (Turquía) | [Tayfun Akkoyun](https://github.com/crasadure) |
+| vi-vn | Vietnamita (Vietnam) | [phjtieudoc](https://github.com/phjtieudoc) |
+| zh-hk | Chino tradicional (Hong Kong) | [TurboHK](https://github.com/TurboHK) |
+| zh-tw | Chino tradicional (Taiwán) | [Yi Chi](https://www.cotpear.com), [Yi-Jyun Pan](https://github.com/pan93412) |
 
-## Help With Localization
+## Ayuda con la localización
 
-We encourage everyone to help with localization. The following is how to do it.
+Animamos a todos a ayudar con la localización. A continuación se muestra cómo hacerlo.
 
-1. Fork this repository.
+1. Bifurca este repositorio.
 
-2. Translate **en-us.xaml** to your own language then save it like **de-de.xaml**.
+2. Traduce **en-us.xaml** a tu propio idioma y guárdalo como **de-de.xaml**.
 
-3. Copy it to the right path.
+3. Cópialo en la ruta correcta.
 
-4. Make a Pull Request.
+4. Haz una solicitud de extracción.
 
-There is the files you can translate with:
+Estos son los archivos que puedes traducir:
 
 ``` batch
 src\OfficeToolPlus\Dictionaries\Languages
@@ -102,8 +102,9 @@ config\Launcher
 config\Message
 ```
 
-## About
+## Acerca de
 
-© 2016-2024 Yerong. All Rights Reserved.
+© 2016-2024 Yerong. Todos los derechos reservados.
 
-> Blog [@Yerong の小窝](https://www.coolhub.top/) · GitHub [@YerongAI](https://github.com/YerongAI) · Telegram [@Office Tool Plus](https://t.me/s/otp_channel)
+> Dev By Arturo Cervantes Galindo 亗
+```
